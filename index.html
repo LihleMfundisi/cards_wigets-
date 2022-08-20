@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
+    
 </head>
 <body>
     <div> 
@@ -56,9 +58,10 @@
             <span x-text="deckId"></span>     
             <button x-on:click="loadDeck()">load deck</button>
             <button x-on:click="drawFiveCards()">Draw 5 cards</button>
-            <button x-on:click="shuffle()">Shuffle</button>
+            <button x-on:click="shuffle()">Shuffle</button> 
 
             <div>
+              <table>
               <h2>Cards drawn</h2>
                  <div>
                     Card remaining: <span x-text="remaining"></span>
@@ -68,7 +71,7 @@
                 <!-- <div x-text="card.image"></div> -->
                 <img x-bind:src="card.image" alt="" height="150">
               </template>
-
+              </table>
           </div>
         </div>
 

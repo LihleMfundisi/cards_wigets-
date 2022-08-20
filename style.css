@@ -1,0 +1,12 @@
+body {
+    background-color: darkgreen;
+    padding: 4px;
+    margin: 2px; 
+}
+
+table {
+    margin: 4px; 
+    padding: 3px; 
+    border: 2px solid;
+    align: center;
+}
